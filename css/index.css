@@ -1,0 +1,80 @@
+html,body{width: 100%;height: 100%;font-size: 20px;color: white;overflow: hidden;}
+* {margin: 0;padding: 0;}
+.layui-row{width: 100%;height: 100%;background: #333;position: relative}
+/*头部*/
+.hcl_top{display: flex;align-items: center;justify-content: center;padding: 20px 0}
+.hcl_top .img_box{width: 40%;text-align: center}
+.hcl_top .img_box img{width: 40px;height: 40px;border: 1px solid red;border-radius: 50%;overflow: hidden}
+.hcl_top .list_nar{width:50%;display: flex;text-align: center;padding:0 0 0 10%}
+.hcl_top .list_nar li{width: 15%;cursor:pointer;font-size: 17px}
+/*选项颜色*/
+.listyle{color: red}
+/*公共样式*/
+.hcl_center{width: 100%;height: calc(100% - 62px)}
+.hcl_center .content .title{width: 80%;margin: 0 10%;text-align: center;font-size: 45px;padding: 6% 0 0 0}
+.hcl_center .details ul{display: flex;flex-flow: wrap;font-size: 18px;text-align: center;margin:3% 0 2% 2%;}
+.hcl_center .details ul li:nth-child(1){-webkit-animation:'fadeInLeft' .1s 1 ease}
+.hcl_center .details ul li:nth-child(2){-webkit-animation:'fadeInLeft' .2s 1 ease}
+.hcl_center .details ul li:nth-child(3){-webkit-animation:'fadeInLeft' .3s 1 ease}
+.hcl_center .details ul li:nth-child(4){-webkit-animation:'fadeInLeft' .4s 1 ease}
+.hcl_center .details ul li:nth-child(5){-webkit-animation:'fadeInLeft' .5s 1 ease}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+.hcl_center .consdet{width: 100%;height:100%;position:absolute;top: 0;background: #333;display: none;overflow: hidden;}
+.hcl_center .consdet div{position:absolute;top:-100px;width: 140%;left: -20%;height: calc(100% + 50px);background: white;border-radius: 0  0 50% 50%}
+.hcl_center .consdet i{position: absolute;
+    bottom: 10px;border-radius: 50%;color: white;font-weight: 800;cursor: pointer;font-size: 25px;}
+.hcl_center .consdet h1{color: black;text-align: center;font-size: 40px;margin-top:150px;margin-bottom: 100px;}
+.hcl_center .consdet .cst{color: black;text-align: center;overflow: hidden}
+.hcl_center .consdet .ret{display: flex;justify-content: center;font-size: 20px}
+
+/*首页*/
+.hcl_center .consdet .indlst {color: white!important;}
+.hcl_center .consdet .indlst h1{color: white!important;}
+.hcl_center .consdet .indlst p{font-size: 14px;}
+/*经历*/
+.hcl_center .details .listde li{width:12%;cursor:pointer;margin: 4% 0 0 0;}
+.hcl_center .details .listde li:hover{color: rgb(254,32,31)}
+.dbyy{height: 5px;width: 40px;border-radius: 50%;background: rgb(255,65,65);margin: 10px auto;opacity: 0.1;display: none}
+.hcl_center .details ul li:hover .dbyy{display: block}
+.hcl_center .consdet .lst h1{margin-bottom: 10px}
+.hcl_center .consdet .lst p{margin-top: 30px;font-size: 20px;}
+.hcl_center .consdet .lst img{width:100px;height: 100px;border: 1px solid}
+/*作品*/
+.hcl_center .details .works{margin-left:15%}
+.hcl_center .details .works li{width: 20%;display: flex;justify-content: center;}
+.hcl_center .details .works span{display: block;width: 150px;height: 150px;border-radius: 50%;border: 1px solid white}
+.hcl_center .details .works img{width: 45px;height: 45px;margin:50px auto}
+.hcl_center .details .works text{display: none;line-height: 150px}
+.hcl_center .details .works li:hover text{display: block;color: white}
+.hcl_center .details .works li:hover img{display: none}
+.hcl_center .details .works li:hover span{border: none}
+.hcl_center .details .wd:hover{background: rgb(255,65,65);box-shadow: 0px 0px 20px rgba(255,65,65,0.5)}
+.hcl_center .details .jm:hover{background: rgb(255,196,0);box-shadow: 0px 0px 20px rgba(255,196,0,0.5)}
+.hcl_center .details .yx:hover{background: rgb(61,90,254);box-shadow: 0px 0px 20px rgba(61,90,254,0.5)}
+.hcl_center .details .qt:hover{background: rgb(0,230,118);box-shadow: 0px 0px 20px rgba(0,230,118,0.5)}
+.hcl_center .conm h1{color: white;}
+.hcl_center .conm  .cst{color: white!important;}
+.hcl_center .conm  .cst .cost dt{width: 20%;height: 30px;background: white;margin: 20px 40%;border-radius: 50px;line-height: 30px;color: rgb(255,65,65);text-align: left;text-indent: 20px}
+.hcl_center .conm  .cst .cost p{float: right;margin-right: 15px}
+.hcl_center .conm  .cst .cost img{width:20px;height: 20px}
+.hcl_center .conm  .cst .cost_b dt{color:rgb(255,196,0) !important}
+.hcl_center .conm  .cst .cost_c dt{color:rgb(61,90,254) !important}
+.hcl_center .conm  .cst .cost_d dt{color:rgb(0,230,118) !important}
+/*底部*/
+.hcl_bottom{width:100%;color: white;text-align: center;bottom: 10px;font-size: 5px;opacity: 0.5;position: absolute}
+
+
+
+
+
+
